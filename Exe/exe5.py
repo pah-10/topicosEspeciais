@@ -2,7 +2,7 @@
 #Faça uma aplicação que receba o valor de quatro resistências ligadas em série, calcule e mostre a resistência equivalente, a maior e a menor resistência. 
 
 import os
-os.system('clear')
+os.system('cls')
 
 #variaveis aux
 resisEquivalente = 0
