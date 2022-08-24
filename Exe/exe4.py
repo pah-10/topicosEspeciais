@@ -4,7 +4,6 @@
 import os
 os.system('cls')
 
-
 #variaveis aux
 desconto = 0
 valorDescontado = 0
