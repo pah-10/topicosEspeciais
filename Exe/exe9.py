@@ -5,10 +5,11 @@
 
 import os
 
-#Definições de funções
+#Função que limpa console
 def limpar_tela():
     os.system('cls')
 
+#Função que valida valores inseridos
 def info_valor():
     while True:
         try:
@@ -16,6 +17,7 @@ def info_valor():
         except ValueError:
             print("O valor informado não é um número inteiro")
 
+#Função que faz a inserção dos dados
 def insercao_valores():
     dados_valores = []
     continuar = True
@@ -35,9 +37,11 @@ def insercao_valores():
     
     return dados_valores
 
+#Função que verifica se o número é par
 def par(valor):
     return (valor % 2 == 0)
 
+#Função que conta quantos pares existem
 def conta_par(numeros):
     qtd_par = 0
 
@@ -47,9 +51,11 @@ def conta_par(numeros):
 
     return qtd_par
 
+#Função que verifica se o número é impar
 def impar(valor):
     return (valor % 2 != 0)
 
+#Função que retorna numeros impares
 def retorna_impar(numeros):
     impares = []
 
@@ -59,6 +65,7 @@ def retorna_impar(numeros):
 
     return impares
 
+#Função que retorna maio numero
 def maior_num(numeros):
     maior = numeros[0]
 
@@ -68,6 +75,7 @@ def maior_num(numeros):
 
     return maior
 
+#Função que retona menor numero
 def menor_num(numeros):
     menor = numeros[0]
 
@@ -77,13 +85,14 @@ def menor_num(numeros):
 
     return menor
 
+#Função que retorna media de valores
 def media_num(numeros):
     return (sum(numeros) / len(numeros))
 
+#Função principal
 def main():
 
     limpar_tela() 
-
     lista_valores = insercao_valores()
 
     print("\nOs valores inseridos foram: {} \n".format(lista_valores))
@@ -93,5 +102,5 @@ def main():
     print("O menor numero eh {}".format(menor_num(lista_valores)))
     print("A media dos numero eh {}".format(media_num(lista_valores)))
 
-
+#Chamada da função principal
 main()
