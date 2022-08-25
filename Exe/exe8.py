@@ -5,11 +5,11 @@
 
 import os
 
-
-#Definições de funções
+#Função que limpa tela
 def limpar_tela():
     os.system('cls')
 
+#Função que verifica valores inseridos
 def info_valor():
     while True:
         try:
@@ -17,9 +17,11 @@ def info_valor():
         except ValueError:
             print("O valor informado não é um número")
 
+#Função que calcula o IMC
 def imc(peso, altura):
     return round(peso / (altura * altura), 2)
-    
+
+#Função main
 def main():
     limpar_tela() 
 
@@ -43,4 +45,5 @@ def main():
         else:
             continuar = False
 
+#Chamada da função
 main()
