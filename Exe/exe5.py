@@ -25,4 +25,4 @@ for i in range (4):
 	resisEquivalente += resis
 
 #saida de dados
-print("\nA resistencia equivalente eh: {0}\nA maior resistencia eh: {1}\nA menor resistencia eh: {2}%".format(resisEquivalente, resisMaior, resisMenor))
+print("\nA resistencia equivalente eh: {0}\nA maior resistencia eh: {1}\nA menor resistencia eh: {2}".format(resisEquivalente, resisMaior, resisMenor))
