@@ -4,9 +4,15 @@
 #   For inputString= "abac", the output should be checkPalindrome(inputString) = false;
 #   For inputString= "a", the output should be checkPalindrome(inputString) = true.
 
+import os
+os.system('cls')
+
 def checkPalindrome(string):
-    print(string)
+	if str(string) == str(string)[::-1] :
+		print("Eh palindromo")
+	else:
+		print("Nao eh palindromo")
 
 palavra = input("Insira a palavra para verificação: ")
 
-checkPalindrome(palavra)
+checkPalindrome(palavra.lower())
