@@ -6,6 +6,8 @@
 import os
 import collections
 
+os.system("cls")
+
 def adjacentElementsProduct(lista):
 	largest_product = lista[0] * lista[1]
 	
@@ -13,9 +15,8 @@ def adjacentElementsProduct(lista):
 		if(largest_product < (lista[i] * lista[i+1])):
 			largest_product = lista[i] * lista[i+1]
 	
-	print("O maior produto eh", largest_product)
-
+	return largest_product
 
 inputArray= [3, 6, -2, -5, 7, 3]
 
-adjacentElementsProduct(inputArray)
+print("O maior produto eh", adjacentElementsProduct(inputArray)) 
