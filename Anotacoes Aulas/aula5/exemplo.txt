@@ -1,0 +1,6 @@
+Olá 
+sou 
+o 
+exemplo.txt
+
+'-'
