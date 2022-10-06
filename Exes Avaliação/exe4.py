@@ -4,8 +4,6 @@
 
 import os
 import json
-from pstats import SortKey
-from textwrap import indent
 
 def limpa_tela():
     os.system("cls") 
